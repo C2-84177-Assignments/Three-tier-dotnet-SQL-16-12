@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: vaibhavnitor/frontend-test-image:latest
+        image: vaibhavnitor/frontend-three-tier-image:latest
         ports:
         - containerPort: 80
