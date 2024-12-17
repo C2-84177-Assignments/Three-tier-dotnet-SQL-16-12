@@ -23,7 +23,7 @@ spec:
         - name: ASPNETCORE_ENVIRONMENT
           value: "Production"
         - name: ConnectionStrings__Database
-          value: "Server=34.118.234.136,1433;Database=ElectricDB;User Id=sa;Password=test@123"
+          value: "Server=44.221.249.220,1433;Database=ElectricDB;User Id=sa;Password=test@123"
         - name: jwtConfig__Key
           value: "Bhaskarmehtajharkhand"
         - name: jwtConfig__Duration
