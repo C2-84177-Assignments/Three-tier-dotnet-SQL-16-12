@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+  labels:
+    app: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: vaibhavnitor/backend-three-tier-image:latest
+        ports:
+        - containerPort: 81
+        env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: "Production"
+        - name: ConnectionStrings__Database
+          value: "Server=44.221.249.220,1433;Database=ElectricDB;User Id=sa;Password=test@123"
+        - name: jwtConfig__Key
+          value: "Bhaskarmehtajharkhand"
+        - name: jwtConfig__Duration
+          value: "1"
