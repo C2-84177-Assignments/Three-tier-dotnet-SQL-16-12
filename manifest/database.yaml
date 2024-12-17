@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: database
-        image: vaibhavnitor/database-test-image:latest
+        image: vaibhavnitor/database-three-tier-image:latest
         env:
         - name: ACCEPT_EULA
           value: "Y"
