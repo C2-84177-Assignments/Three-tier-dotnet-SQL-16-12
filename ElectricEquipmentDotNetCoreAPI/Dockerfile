@@ -27,7 +27,7 @@ WORKDIR /app
 COPY --from=build /app/out .
 
 # Expose the desired port(s) for the application
-EXPOSE 80
+EXPOSE 81
 EXPOSE 443
 # Set the entry point for the container
 ENTRYPOINT ["dotnet", "ElectricEquipmentDotNetCoreProject.dll"]
